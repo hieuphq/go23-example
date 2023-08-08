@@ -1,0 +1,14 @@
+version: "3"
+services:
+  db:
+    image: postgres:11
+    restart: always
+    environment:
+      POSTGRES_DB: ex7_local
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    container_name: ex7_local
+    ports:
+      - "5432:5432"
+    expose:
+      - "5432"
