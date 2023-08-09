@@ -1,0 +1,3 @@
+# flyctl launch added from ex7/.gitignore
+ex7/**/.env
+fly.toml

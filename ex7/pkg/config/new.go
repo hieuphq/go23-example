@@ -17,8 +17,8 @@ type Config struct {
 
 func LoadConfig() Config {
 	return Config{
-		Port:  GetEnvStr("PORT", "3000"),
-		DBUrl: GetEnvStr("DB_URL", ""),
+		Port:  GetEnvStr("PORT", "8080"),
+		DBUrl: GetEnvStr("DATABASE_URL", ""),
 	}
 }
 
