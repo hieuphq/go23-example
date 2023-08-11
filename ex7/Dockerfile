@@ -9,7 +9,6 @@ RUN set -ex && \
     musl-dev
 
 RUN go build -o server cmd/server/main.go
-RUN ls -la
 
 FROM alpine:3.15.0
 RUN apk --no-cache add ca-certificates
